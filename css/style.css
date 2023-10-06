@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'ADLaM Display', cursive;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.body{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+nav{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    animation-name: nav;
+    animation-duration: 2s;
+}
+
+nav > .dark{
+    margin-right: 70px;
+    font-size: 30px;
+}
+
+nav > .dark > #sun{
+    position: fixed;
+    top: 22px;
+    right: 70px;
+    color: #f1c40f;
+    cursor: pointer;
+    display: none;
+}
+
+nav > .dark > #moon{
+    color: #f1c40f;
+    cursor: pointer;
+}
+
+nav h1{
+    color: #0e6aef;
+    font-size: 30px;
+    margin: 15px 100px;
+}
+
+.site{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.site .txt{
+    margin-top: 150px;
+    width: 400px;
+    position: relative;
+    animation-name: txt;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+.site .txt h2{
+    color: blueviolet;
+    font-size: 30px;
+    margin: 15px 0px;
+}
+
+.site .txt p{
+    font-size: 15px;
+    margin: 10px 0px;
+}
+
+.site .txt button{
+    font-size: 15px;
+    padding: 7px 20px;
+    margin-top: 30px;
+    border: none;
+    background: #0e6aef;
+    border-radius: 6px;
+}
+
+.site .txt button:hover{
+    transition: 0.7s;
+    transform: scale(1.1);
+    background: blue;
+    color: white;
+    box-shadow: 0px 0px 20px 1px black;
+    cursor: pointer;
+}
+
+.site .img{
+    position: relative;
+    animation-name: img-2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.site .img img{
+    width: 500px;
+    position: relative;
+    animation-name: img;
+    animation-duration: 3s;
+}
+
+@keyframes nav{
+    from{
+    top: -50px;
+    }
+
+    to{
+    top: 0px;
+    }
+}
+
+@keyframes txt{
+    from{
+        bottom: -500px;
+        right: 100px;
+    }
+
+    to{
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
+@keyframes img{
+    from{
+        left: 500px;
+        top: 100px;
+    }
+
+    to{
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes img-2{
+    0%{
+        top: -20px;
+        left: 20px;
+    }
+
+    50%{
+        top: 50px;
+        left: -20px;
+    }
+
+    100%{
+        top: -20px;
+        left: 20px;
+    }
+}
